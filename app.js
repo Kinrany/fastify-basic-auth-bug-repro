@@ -20,7 +20,11 @@ module.exports.App = () => {
   });
 
   app.after(() => {
-    app.get("/auth", {
+    app.get('/health', {
+      handler: async () => 'OK\n',
+    });
+
+    app.get('/auth', {
       onRequest: app.basicAuth,
       handler: async () => 'OK\n',
     });
