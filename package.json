@@ -1,0 +1,15 @@
+{
+	"scripts": {
+		"start": "node app.js",
+		"test": "tap test.js"
+	},
+	"dependencies": {
+		"fastify": "^3.14.0",
+		"fastify-basic-auth": "^1.0.1",
+		"pino-pretty": "^4.7.1",
+		"tap": "^14.11.0"
+	},
+	"engines": {
+		"node": "14.15.5"
+	}
+}
